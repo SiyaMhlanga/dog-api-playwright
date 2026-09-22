@@ -1,0 +1,13 @@
+{
+  "name": "dog-api-playwright",
+  "version": "1.0.0",
+  "description": "Playwright API test: the Dog CEO API lists \"english\" as a sub-breed of \"mastiff\"",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
