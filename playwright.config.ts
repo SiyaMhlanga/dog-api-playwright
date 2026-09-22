@@ -12,7 +12,15 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
 
-  reporter: [['list'], ['html', { open: 'never' }]],
+  reporter: [
+    ['list'],
+    ['html', { open: 'never' }],
+    // Monocart: single-file report with the test steps, annotations and attachments in one view.
+    ['monocart-reporter', {
+      name: 'Dog API – Mastiff Sub-breeds',
+      outputFile: './monocart-report/index.html',
+    }],
+  ],
 
   use: {
     // The trailing slash matters: it lets tests use relative paths such as 'breed/mastiff/list'.

@@ -5,9 +5,11 @@
   "private": true,
   "scripts": {
     "test": "playwright test",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "report:monocart": "monocart show-report monocart-report/index.html"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.0"
+    "@playwright/test": "^1.55.0",
+    "monocart-reporter": "^2.13.1"
   }
 }
